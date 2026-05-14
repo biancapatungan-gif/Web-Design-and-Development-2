@@ -1,0 +1,160 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Course Introduction</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body{
+      background:#f4f7fb;
+      color:#333;
+      line-height:1.6;
+    }
+
+    header{
+      background:#1e3a8a;
+      color:white;
+      padding:40px;
+      text-align:center;
+    }
+
+    header h1{
+      font-size:40px;
+      margin-bottom:10px;
+    }
+
+    .container{
+      width:90%;
+      max-width:1000px;
+      margin:30px auto;
+    }
+
+    .card{
+      background:white;
+      padding:25px;
+      margin-bottom:20px;
+      border-radius:12px;
+      box-shadow:0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .card h2{
+      color:#1e3a8a;
+      margin-bottom:15px;
+    }
+
+    ul{
+      margin-left:20px;
+    }
+
+    .handshake{
+      text-align:center;
+      padding:30px;
+      background:#dbeafe;
+      border-radius:12px;
+    }
+
+    .btn{
+      display:inline-block;
+      margin-top:20px;
+      padding:12px 25px;
+      background:#1e3a8a;
+      color:white;
+      text-decoration:none;
+      border-radius:8px;
+      transition:0.3s;
+    }
+
+    .btn:hover{
+      background:#2563eb;
+    }
+
+    footer{
+      text-align:center;
+      padding:20px;
+      margin-top:30px;
+      background:#1e3a8a;
+      color:white;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Welcome to the Course</h1>
+    <p>Course Introduction × Environment Setup × Handshake</p>
+  </header>
+
+  <div class="container">
+
+    <!-- Course Introduction -->
+    <div class="card">
+      <h2>📘 Course Introduction</h2>
+      <p>
+        Welcome! This course is designed to help you learn step-by-step
+        through practical projects and real-world examples.
+      </p>
+
+      <h3>What You Will Learn:</h3>
+      <ul>
+        <li>Fundamental Concepts</li>
+        <li>Hands-on Development</li>
+        <li>Project Building</li>
+        <li>Debugging & Problem Solving</li>
+      </ul>
+    </div>
+
+    <!-- Environment Setup -->
+    <div class="card">
+      <h2>💻 Environment Setup</h2>
+
+      <p>Before starting, install the following tools:</p>
+
+      <ul>
+        <li>VS Code</li>
+        <li>Git</li>
+        <li>Node.js / Required Runtime</li>
+        <li>Modern Web Browser</li>
+      </ul>
+
+      <h3>Setup Checklist</h3>
+      <ul>
+        <li>✔ Install software</li>
+        <li>✔ Configure environment</li>
+        <li>✔ Run starter project</li>
+        <li>✔ Verify everything works</li>
+      </ul>
+    </div>
+
+    <!-- Handshake -->
+    <div class="card handshake">
+      <h2>🤝 Course Handshake</h2>
+
+      <p>
+        We agree to learn, practice, build projects,
+        and improve consistently throughout this course.
+      </p>
+
+      <p>
+        Mistakes are part of learning. Progress matters more than perfection.
+      </p>
+
+      <a href="#" class="btn">Start Learning</a>
+    </div>
+
+  </div>
+
+  <footer>
+    <p>© 2026 Course Learning Platform</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MVC Architecture × Microservices × REST API</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body{
+      background:#f4f6f9;
+      color:#333;
+      line-height:1.6;
+    }
+
+    header{
+      background:#0f172a;
+      color:white;
+      text-align:center;
+      padding:40px 20px;
+    }
+
+    header h1{
+      font-size:40px;
+      margin-bottom:10px;
+    }
+
+    .container{
+      width:90%;
+      max-width:1100px;
+      margin:30px auto;
+    }
+
+    .card{
+      background:white;
+      padding:25px;
+      margin-bottom:25px;
+      border-radius:12px;
+      box-shadow:0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .card h2{
+      color:#2563eb;
+      margin-bottom:15px;
+    }
+
+    .code-box{
+      background:#111827;
+      color:#22c55e;
+      padding:15px;
+      border-radius:10px;
+      overflow-x:auto;
+      margin-top:15px;
+      font-family: Consolas, monospace;
+    }
+
+    ul{
+      margin-left:20px;
+    }
+
+    .api-table{
+      width:100%;
+      border-collapse:collapse;
+      margin-top:15px;
+    }
+
+    .api-table th,
+    .api-table td{
+      border:1px solid #ccc;
+      padding:12px;
+      text-align:left;
+    }
+
+    .api-table th{
+      background:#2563eb;
+      color:white;
+    }
+
+    footer{
+      text-align:center;
+      padding:20px;
+      background:#0f172a;
+      color:white;
+      margin-top:40px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>MVC Architecture × Microservices × REST API</h1>
+    <p>Understanding Modern Backend Development</p>
+  </header>
+
+  <div class="container">
+
+    <!-- MVC -->
+    <div class="card">
+      <h2>📦 MVC Architecture</h2>
+
+      <p>
+        MVC stands for Model-View-Controller.
+        It separates application logic into 3 connected components.
+      </p>
+
+      <ul>
+        <li><strong>Model</strong> → Handles database and business logic</li>
+        <li><strong>View</strong> → User Interface / Frontend</li>
+        <li><strong>Controller</strong> → Handles requests and responses</li>
+      </ul>
+
+      <div class="code-box">
+<pre>
+project/
+│
+├── models/
+│   └── UserModel.js
+│
+├── views/
+│   └── userView.html
+│
+├── controllers/
+│   └── UserController.js
+│
+└── app.js
+</pre>
+      </div>
+    </div>
+
+    <!-- Microservices -->
+    <div class="card">
+      <h2>⚙️ Microservices Architecture</h2>
+
+      <p>
+        Microservices divide an application into small independent services.
+        Each service handles a specific business function.
+      </p>
+
+      <h3>Example Services:</h3>
+
+      <ul>
+        <li>User Service</li>
+        <li>Payment Service</li>
+        <li>Order Service</li>
+        <li>Notification Service</li>
+      </ul>
+
+      <div class="code-box">
+<pre>
+[ Client ]
+     |
+     v
+[ API Gateway ]
+     |
+--------------------------------
+|        |         |           |
+v        v         v           v
+
+User   Order    Payment   Notification
+Service Service  Service      Service
+</pre>
+      </div>
+    </div>
+
+    <!-- REST API -->
+    <div class="card">
+      <h2>🌐 REST API</h2>
+
+      <p>
+        REST API allows systems to communicate over HTTP using standard methods.
+      </p>
+
+      <table class="api-table">
+        <tr>
+          <th>Method</th>
+          <th>Purpose</th>
+          <th>Example</th>
+        </tr>
+
+        <tr>
+          <td>GET</td>
+          <td>Retrieve Data</td>
+          <td>/users</td>
+        </tr>
+
+        <tr>
+          <td>POST</td>
+          <td>Create Data</td>
+          <td>/users</td>
+        </tr>
+
+        <tr>
+          <td>PUT</td>
+          <td>Update Data</td>
+          <td>/users/1</td>
+        </tr>
+
+        <tr>
+          <td>DELETE</td>
+          <td>Delete Data</td>
+          <td>/users/1</td>
+        </tr>
+      </table>
+
+      <div class="code-box">
+<pre>
+// Example REST API Endpoint
+
+app.get('/users', (req, res) => {
+   res.json([
+      { id: 1, name: "John" },
+      { id: 2, name: "Jane" }
+   ]);
+});
+</pre>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    <p>© 2026 Backend Development Learning</p>
+  </footer>
+
+</body>
+</html>
